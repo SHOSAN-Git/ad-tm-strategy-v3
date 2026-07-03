@@ -37,6 +37,7 @@
 
   .pj-input { width:100%; border:1px dashed var(--rule); background:#fffdf8; padding:4px 6px; font-size:12px; font-family:inherit; color:var(--ink); border-radius:3px; }
   .pj-input:focus { outline:none; border-color:var(--accent); background:#fff; }
+  table.lefty td { text-align:left !important; vertical-align:top; }
 
   .doc-header {
     border-bottom: 2px solid var(--ink);
@@ -863,19 +864,87 @@
           <div style="border-left:3px solid var(--gap-color); padding-left:14px;">
             <div style="font-size:13px; font-weight:700; color:var(--ink); margin-bottom:6px;">② 打ち手のスケジュール（壁打ち中）</div>
             <div style="font-size:12px; color:var(--ink-mid);">
-              <p style="margin-bottom:10px;">骨格＝上期（7〜12月）は仕込み、下期（27年1〜6月）は本番。全打ち手の前提になる運用の自動化だけ四半期で刻み、12月末に「安定稼働の合否判定」を置いて下期本番に入れるかを判断する。</p>
-              <table style="font-size:12px; margin:6px 0;">
-                <tbody>
-                <tr><th style="text-align:left; width:52px;">軸</th><th style="text-align:left; width:44%;">上期（7〜12月）＝仕込み</th><th style="text-align:left;">下期（1〜6月）＝本番</th></tr>
-                <tr><td style="font-weight:700;">運用</td><td>7〜9月：配信前分析・入稿の自動化をリテールで稼働（入稿はAdDrive側とのAPI連携の可否確認が前提。7月に確定）<br>10〜12月：週次改善・翌月提案の自動化＋Wチェック体制を整備<br><span style="color:var(--warn); font-weight:700;">12月末：安定稼働の合否判定</span></td><td>合格を条件に1月からエンプラ・ミドルへ展開。社員を実運用から解放し、目標の配置（エンプラ＝社員プランナー1名＋業務委託）で運用が回る状態にする</td></tr>
-                <tr><td style="font-weight:700;">成果</td><td>7月：プランナー要件（到達点と時期）のすり合わせを最初のタスクに置く<br>以降：プランナー業務の型化・ステップアップ定義をつくり現場へ下ろす（新卒社員でも動ける状態に）。LPツールを使った改善提案を型に組み込む。各案件のゴール設計の型づくり</td><td>社員がエンプラのプランナーとして1人1社で稼働（実作業は業務委託・リーダー格インターン）。案件ごとの個別ゴール設計へ</td></tr>
-                <tr><td style="font-weight:700;">獲得</td><td>フロントとの協働体制・連携の仕組みを構築し、下の獲得・移行ペースをすり合わせて下期の計画を練る</td><td>目標の配置で獲得連携が回る。獲得の基盤づくりに着手（中長期）</td></tr>
-                <tr><td style="font-weight:700;">SaaS</td><td>7月：エンプラ新規へ提案開始<br>8月：新規への販売開始（LPツールはマーケ社員も関わり始める）<br>10月：既存クライアントへの案内開始（LPツールは既存ミドルへ提案開始）<br>11月：既存契約の切り替え開始（お試し期間を設計）。導入後サポートの受け皿づくり</td><td>1月〜：既存切り替えの本格化<br>6月：既存切り替え完了</td></tr>
-                </tbody>
-              </table>
-              <ul style="font-size:11px; color:var(--ink-light); padding-left:16px; margin:8px 0 0; display:flex; flex-direction:column; gap:3px; list-style:disc;">
-                <li>体制の前提：リーダー1名・プロフェッショナル1名が7月に、プロフェッショナル1名が10月に、リーダー複数名が3月に離脱予定。下期本番への影響が大きいため、1〜2月に後継リーダーの引き上げを完了させる。</li>
-                              </ul>
+              <p style="margin-bottom:12px;">骨格＝上期（7〜12月）は仕込み、下期（27年1〜6月）は本番。全打ち手の前提になる運用の自動化だけ四半期で刻み、12月末に「安定稼働の合否判定」を置いて下期本番に入れるかを判断する。</p>
+              <div style="border:1px solid var(--rule); border-radius:6px; margin-bottom:10px; overflow:hidden; background:var(--bg-card);">
+                <div style="padding:7px 14px; background:var(--accent-light); font-size:12.5px; font-weight:700; color:var(--ink);">運用<span style="font-weight:600; font-size:10.5px; color:var(--accent); margin-left:8px;">クリティカルパス（全打ち手の前提）</span></div>
+                <div style="padding:10px 14px 2px;">
+                  <div style="font-size:10.5px; font-weight:700; letter-spacing:0.05em; color:var(--accent); margin-bottom:4px;">上期（7〜12月）＝仕込み</div>
+                  <ul style="padding-left:16px; margin:0 0 10px; display:flex; flex-direction:column; gap:3px; list-style:disc; text-align:left;">
+                  <li><strong>7〜9月：</strong>配信前分析・入稿の自動化をリテールで稼働（入稿はAdDrive側とのAPI連携の可否確認が前提。7月に確定）</li>
+                  <li><strong>10〜12月：</strong>週次改善・翌月提案の自動化＋Wチェック体制を整備</li>
+                  <li><strong style="color:var(--warn);">12月末：安定稼働の合否判定</strong></li>
+                  </ul>
+                  <div style="font-size:10.5px; font-weight:700; letter-spacing:0.05em; color:var(--gap-color); margin-bottom:4px;">下期（27年1〜6月）＝本番</div>
+                  <ul style="padding-left:16px; margin:0 0 10px; display:flex; flex-direction:column; gap:3px; list-style:disc; text-align:left;">
+                  <li>合格を条件に<strong>1月から</strong>エンプラ・ミドルへ展開</li>
+                  <li>目標の配置（エンプラ＝社員プランナー1名＋実運用は業務委託）で運用が回る状態にする</li>
+                  </ul>
+                </div>
+              </div>
+              <div style="border:1px solid var(--rule); border-radius:6px; margin-bottom:10px; overflow:hidden; background:var(--bg-card);">
+                <div style="padding:7px 14px; background:var(--accent-light); font-size:12.5px; font-weight:700; color:var(--ink);">組織<span style="font-weight:600; font-size:10.5px; color:var(--accent); margin-left:8px;">エンプラに対応できる社員を育てる</span></div>
+                <div style="padding:10px 14px 2px;">
+                  <div style="font-size:10.5px; font-weight:700; letter-spacing:0.05em; color:var(--accent); margin-bottom:4px;">上期（7〜12月）＝仕込み</div>
+                  <ul style="padding-left:16px; margin:0 0 10px; display:flex; flex-direction:column; gap:3px; list-style:disc; text-align:left;">
+                  <li><strong>7月：</strong>プランナー要件（到達点と時期）のすり合わせを最初のタスクに置く</li>
+                  <li>社員のプランニングスキル強化を開始する。クライアントの商品・商圏を踏まえた設計力を鍛え、LPツールを使いこなせる状態をつくる（エンプラ提案・支援の実例から型を学ぶ）</li>
+                  <li><strong>12月末：</strong>全社員がレベル1（定例に出席し広告成果を報告）に到達</li>
+                  </ul>
+                  <div style="font-size:10.5px; font-weight:700; letter-spacing:0.05em; color:var(--gap-color); margin-bottom:4px;">下期（27年1〜6月）＝本番</div>
+                  <ul style="padding-left:16px; margin:0 0 10px; display:flex; flex-direction:column; gap:3px; list-style:disc; text-align:left;">
+                  <li><strong>1〜2月：</strong>後継リーダーの引き上げを完了する（3月のリーダー複数離脱に備える）</li>
+                  <li><strong>期末：</strong>レベル2（踏み込んだ提案・対話、LPツールを使った改善提案）に到達</li>
+                  </ul>
+                </div>
+              </div>
+              <div style="border:1px solid var(--rule); border-radius:6px; margin-bottom:10px; overflow:hidden; background:var(--bg-card);">
+                <div style="padding:7px 14px; background:var(--accent-light); font-size:12.5px; font-weight:700; color:var(--ink);">成果<span style="font-weight:600; font-size:10.5px; color:var(--accent); margin-left:8px;">成果を出す型をつくる</span></div>
+                <div style="padding:10px 14px 2px;">
+                  <div style="font-size:10.5px; font-weight:700; letter-spacing:0.05em; color:var(--accent); margin-bottom:4px;">上期（7〜12月）＝仕込み</div>
+                  <ul style="padding-left:16px; margin:0 0 10px; display:flex; flex-direction:column; gap:3px; list-style:disc; text-align:left;">
+                  <li>プランナー業務の型化・ステップアップ定義をつくり現場へ下ろす（新卒社員でも動ける状態に）。LPツールを使った改善提案を型に組み込む</li>
+                  <li>各案件のゴール設計の型づくり</li>
+                  </ul>
+                  <div style="font-size:10.5px; font-weight:700; letter-spacing:0.05em; color:var(--gap-color); margin-bottom:4px;">下期（27年1〜6月）＝本番</div>
+                  <ul style="padding-left:16px; margin:0 0 10px; display:flex; flex-direction:column; gap:3px; list-style:disc; text-align:left;">
+                  <li>社員がエンプラのプランナーとして1人1社で稼働（実作業は業務委託・リーダー格インターン）</li>
+                  <li>案件ごとの個別ゴール設計へ</li>
+                  </ul>
+                </div>
+              </div>
+              <div style="border:1px solid var(--rule); border-radius:6px; margin-bottom:10px; overflow:hidden; background:var(--bg-card);">
+                <div style="padding:7px 14px; background:var(--accent-light); font-size:12.5px; font-weight:700; color:var(--ink);">獲得<span style="font-weight:600; font-size:10.5px; color:var(--accent); margin-left:8px;">フロントとの連携</span></div>
+                <div style="padding:10px 14px 2px;">
+                  <div style="font-size:10.5px; font-weight:700; letter-spacing:0.05em; color:var(--accent); margin-bottom:4px;">上期（7〜12月）＝仕込み</div>
+                  <ul style="padding-left:16px; margin:0 0 10px; display:flex; flex-direction:column; gap:3px; list-style:disc; text-align:left;">
+                  <li>フロントとの協働体制・連携の仕組みを構築し、下の獲得・移行ペースをすり合わせて下期の計画を練る</li>
+                  </ul>
+                  <div style="font-size:10.5px; font-weight:700; letter-spacing:0.05em; color:var(--gap-color); margin-bottom:4px;">下期（27年1〜6月）＝本番</div>
+                  <ul style="padding-left:16px; margin:0 0 10px; display:flex; flex-direction:column; gap:3px; list-style:disc; text-align:left;">
+                  <li>目標の配置で獲得連携が回る。獲得の基盤づくりに着手（中長期）</li>
+                  </ul>
+                </div>
+              </div>
+              <div style="border:1px solid var(--rule); border-radius:6px; margin-bottom:10px; overflow:hidden; background:var(--bg-card);">
+                <div style="padding:7px 14px; background:var(--accent-light); font-size:12.5px; font-weight:700; color:var(--ink);">SaaS<span style="font-weight:600; font-size:10.5px; color:var(--accent); margin-left:8px;">AdDrive・LPツール</span></div>
+                <div style="padding:10px 14px 2px;">
+                  <div style="font-size:10.5px; font-weight:700; letter-spacing:0.05em; color:var(--accent); margin-bottom:4px;">上期（7〜12月）＝仕込み</div>
+                  <ul style="padding-left:16px; margin:0 0 10px; display:flex; flex-direction:column; gap:3px; list-style:disc; text-align:left;">
+                  <li><strong>7月：</strong>エンプラ新規へ提案開始</li>
+                  <li><strong>8月：</strong>新規への販売開始（LPツールはマーケ社員も関わり始める）</li>
+                  <li><strong>10月：</strong>既存クライアントへの案内開始（LPツールは既存ミドルへ提案開始）</li>
+                  <li><strong>11月：</strong>既存契約の切り替え開始（お試し期間を設計）。導入後サポートの受け皿づくり</li>
+                  </ul>
+                  <div style="font-size:10.5px; font-weight:700; letter-spacing:0.05em; color:var(--gap-color); margin-bottom:4px;">下期（27年1〜6月）＝本番</div>
+                  <ul style="padding-left:16px; margin:0 0 10px; display:flex; flex-direction:column; gap:3px; list-style:disc; text-align:left;">
+                  <li><strong>1月〜：</strong>既存切り替えの本格化</li>
+                  <li><strong>6月：</strong>既存切り替え完了</li>
+                  </ul>
+                </div>
+              </div>
+              <ul style="font-size:11px; color:var(--ink-light); padding-left:16px; margin:2px 0 0; display:flex; flex-direction:column; gap:3px; list-style:disc;">
+                <li>体制の前提：リーダー1名・プロフェッショナル1名が7月に、プロフェッショナル1名が10月に、リーダー複数名が3月に離脱予定。</li>
+              </ul>
 
               <div style="margin-top:18px;">
                 <div style="font-size:13px; font-weight:700; color:var(--ink); margin-bottom:6px;">ティア別の獲得・移行ペース（数値計画たたき）</div>
@@ -908,7 +977,7 @@
             <div style="font-size:13px; font-weight:700; color:var(--ink); margin-bottom:6px;">③ それを実現するメンバーの役割（壁打ち中）</div>
             <div style="font-size:12px; color:var(--ink-mid);">
               <p style="margin-bottom:10px;">社員6名で獲得・運用・成果・SaaSの4プロジェクト制。各PJにリーダーを置き、社員は1人2PJ（片方でリーダー・片方でメンバー）を原則とする。リーダー・メンバーの割付はすり合わせの上で確定する（下表に直接入力できます）。</p>
-              <table style="font-size:12px; margin:6px 0;">
+              <table class="lefty" style="font-size:12px; margin:6px 0;">
                 <tbody>
                 <tr><th style="text-align:left; width:52px;">PJ</th><th style="text-align:left;">ミッション</th><th style="text-align:left; width:110px;">リーダー</th><th style="text-align:left; width:170px;">メンバー</th></tr>
                 <tr><td style="font-weight:700;">獲得</td><td>フロントとの連携の仕組みづくり・獲得目標の共同管理・売りやすい状態づくり</td><td><input class="pj-input" id="pj-kakutoku-l" placeholder="未定"></td><td><input class="pj-input" id="pj-kakutoku-m" placeholder="未定"></td></tr>
@@ -934,7 +1003,7 @@
 
               <div style="margin-top:14px;">
                 <div style="font-weight:700; color:var(--ink); margin-bottom:5px;">プランナー要件（叩き台）</div>
-                <table style="font-size:12px; margin:6px 0;">
+                <table class="lefty" style="font-size:12px; margin:6px 0;">
                   <tbody>
                   <tr><th style="text-align:left; width:70px;">レベル</th><th style="text-align:left;">到達状態</th><th style="text-align:left; width:130px;">目安時期</th></tr>
                   <tr><td>レベル1</td><td>既存クライアントの定例に出席し、広告成果を報告できる</td><td>上期末（12月）</td></tr>
@@ -952,7 +1021,7 @@
     </details>
   </details><div class="doc-footer">
     <span>広告TM 5期戦略ドラフト ／ SHO-SAN マーケティングDiv</span>
-    <span>2026年7月 ／ Ver.3.2</span>
+    <span>2026年7月 ／ Ver.3.3</span>
   </div></div>
       
   
