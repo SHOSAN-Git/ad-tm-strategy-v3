@@ -835,8 +835,8 @@
                 <ul style="padding-left:16px; display:flex; flex-direction:column; gap:4px; list-style:disc;">
                   <li>リテール運用の入稿・配信前分析・週次の数値チェックと改善提案・翌月提案をAIと自動化で巻き取り、標準化する。これにより工数を空ける。</li>
                   <li>上記の内容をエンプラ・ミドルにも広げる。実作業・実運用は業務委託またはリーダー格のインターンに委ねる。エンプラは社員1名がプランナーとして入り、実運用は業務委託が担う体制へ。増えた社数でも品質を保つ。</li>
-                  <li>AI化したあとの品質を担保する仕組みをつくる（Wチェック体制・定期レビュー）。</li>
-                  <li>LP制作はLPツールで巻き取る（公開後の改善も簡易にする）。</li>
+                  <li>AI化したあとの品質を担保する仕組みをつくる（定期レビュー）。</li>
+                  <li>LP制作はLPツールで巻き取る。</li>
                 </ul>
               </div>
 
@@ -865,7 +865,6 @@
                   <li>フロントへの販売連携：提案の型・デモ・料金の説明材料を供給し、エンプラ新規から提案を始める。</li>
                   <li><span style="text-decoration:line-through; color:var(--ink-light);">既存クライアントの契約切り替えを設計する。無償で触れるお試し期間を設け、価値を感じてもらった上で移行する。</span></li>
                   <li>導入後の問い合わせ・不具合対応の受け皿をつくる。将来的にはAdDrive内のチャットで自己解決できる状態を目指す。</li>
-                  <li>成果や更新状況がクライアントから直接見える状態になるため、設定漏れ（コンバージョン計測など）をなくす仕組みを開発チームと連携して整える。</li>
                 </ul>
               </div>
 
@@ -881,11 +880,11 @@
                   <div style="font-size:10.5px; font-weight:700; letter-spacing:0.05em; color:var(--accent); margin-bottom:4px;">上期（7〜12月）</div>
                   <ul style="padding-left:16px; margin:0 0 10px; display:flex; flex-direction:column; gap:3px; list-style:disc; text-align:left;">
                   <li><strong>〜9月：</strong>配信前分析の自動化をリテールで稼働させる</li>
-                  <li><strong>10月〜：</strong>入稿の自動化を稼働させる（AdDriveのMCP連携をClaudeから使う。まずはリテールから）</li>
                   <li><strong>〜9月：</strong>エンプラを「社員プランナー1名＋実運用は業務委託またはリーダー格のインターン」の体制へ切り替える準備を完了する（業務委託の確保・引き継ぎ）</li>
+                  <li><strong>10月〜：</strong>入稿の自動化を稼働させる（MetaとのAPI連携が前提。AdDriveのMCP連携をClaudeから使い、まずはリテールから）</li>
                   <li><strong>10月〜：</strong>エンプラ新体制で稼働開始（新規エンプラは獲得時からこの体制で受ける）</li>
                   <li><strong>〜12月：</strong>週次の数値チェックと改善提案・翌月提案の自動化を実装し切る（現在は人手で行っている業務。自動化できると効果が大きい）</li>
-                  <li>AI化した工程の品質は、自動化の仕組みそのものへのWチェック・定期レビューで担保する（個別の配信設定の確認ではなく、仕組み自体を点検する）</li>
+                  <li>AI化した工程の品質は、自動化の仕組みそのものへの定期レビューで担保する</li>
                   </ul>
                   <div style="font-size:10.5px; font-weight:700; letter-spacing:0.05em; color:var(--gap-color); margin-bottom:4px;">下期（27年1〜6月）</div>
                   <ul style="padding-left:16px; margin:0 0 10px; display:flex; flex-direction:column; gap:3px; list-style:disc; text-align:left;">
@@ -900,7 +899,7 @@
                   <div style="font-size:10.5px; font-weight:700; letter-spacing:0.05em; color:var(--accent); margin-bottom:4px;">上期（7〜12月）</div>
                   <ul style="padding-left:16px; margin:0 0 10px; display:flex; flex-direction:column; gap:3px; list-style:disc; text-align:left;">
                   <li><strong>〜9月：</strong>プランナー要件（到達点と時期）のすり合わせを終える</li>
-                  <li>社員のプランニングスキル強化を開始する。クライアントの商材・商圏を踏まえた設計力・提案力を鍛える（エンプラ提案・支援の実例から型を学ぶ）</li>
+                  <li><strong>9月〜：</strong>社員のプランニングスキル強化を開始する。クライアントの商材・商圏を踏まえた設計力・提案力を鍛える（エンプラ提案・支援の実例から型を学ぶ）</li>
                   <li><strong>10月〜：</strong>LPツールを実案件で使い始める</li>
                   <li><strong>〜12月末：</strong>LPツールを使いこなせる状態にする（27年1月のLPツール売上マーケ計上開始に合わせる）</li>
                   <li><strong>12月末：</strong>全社員がプランナー要件レベル1（定例に出席し広告成果を報告）に到達</li>
@@ -908,7 +907,7 @@
                   <div style="font-size:10.5px; font-weight:700; letter-spacing:0.05em; color:var(--gap-color); margin-bottom:4px;">下期（27年1〜6月）</div>
                   <ul style="padding-left:16px; margin:0 0 10px; display:flex; flex-direction:column; gap:3px; list-style:disc; text-align:left;">
                   <li><strong>1〜2月：</strong>後継リーダーの引き上げを完了する（3月のリーダー複数離脱に備える）</li>
-                  <li><strong>期末：</strong>プランナー要件レベル2（定例で踏み込んだ提案・対話、商材・商圏を踏まえた改善提案）に到達</li>
+                  <li><strong>期末：</strong>プランナー要件レベル2（クライアント定例で踏み込んだ提案・対話、商材・商圏を踏まえた改善提案）に到達</li>
                   </ul>
                 </div>
               </div>
@@ -949,12 +948,13 @@
                   <div style="font-size:10.5px; font-weight:700; letter-spacing:0.05em; color:var(--accent); margin-bottom:4px;">上期（7〜12月）</div>
                   <ul style="padding-left:16px; margin:0 0 10px; display:flex; flex-direction:column; gap:3px; list-style:disc; text-align:left;">
                   <li><strong>7月：</strong>エンプラ新規へ提案開始（フロント）</li>
-                  <li><strong>8月：</strong>新規への販売開始</li>
+                  <li><strong>8月：</strong>新規クライアントへの販売開始</li>
                   <li><strong>10月：</strong>既存クライアントへの案内開始</li>
-                  <li><strong>10〜12月：</strong>LPツールを既存クライアントに試験的に使ってもらい、27年からの契約可否をフロントが確認できる状態をつくる</li>
+                  <li><strong>10〜12月：</strong>LPツールのベータ版を既存クライアントに無償で試験的に使ってもらい、27年からの契約可否をフロントが確認できる状態をつくる</li>
                   <li><strong>10月〜：</strong>導入後サポートの受け皿づくり（問い合わせ・不具合対応）</li>
                   <li><strong>11〜12月：</strong>既存契約の切り替えを開始（開始時期は要調整）</li>
                   <li><strong>〜12月：</strong>27年1月のマーケ計上開始に向けて、LPツールを提案できる状態・仕組みを作り上げる</li>
+                  <li><strong>通期：</strong>システム改修・改善を都度行う（必要に応じてクライアントからの要望ヒアリングも行う）</li>
                   </ul>
                   <div style="font-size:10.5px; font-weight:700; letter-spacing:0.05em; color:var(--gap-color); margin-bottom:4px;">下期（27年1〜6月）</div>
                   <ul style="padding-left:16px; margin:0 0 10px; display:flex; flex-direction:column; gap:3px; list-style:disc; text-align:left;">
@@ -970,24 +970,24 @@
 
               <div style="margin-top:18px;">
                 <div style="font-size:13px; font-weight:700; color:var(--ink); margin-bottom:6px;">ティア別の獲得・移行ペース（数値計画たたき）</div>
-                <p style="font-size:11px; color:var(--ink-mid); margin-bottom:8px;">ティア区分は月次フィー基準（エンプラ＝月100万以上／ミドル＝月40万以上100万未満／リテール＝月40万未満）。表の売上は満額換算のたたき（エンプラ100万・ミドル50万・リテール10万/月）。商談中の案件は最大8社あり、現時点の見込みでエンプラ3社・ミドル3社が入る想定（入る月は調整できるため、目標到達から逆算して8〜10月に配置）。リテールは12月まで月6社ペースで縮小し、27年1月にAdDrive・LPツールへの移行で大きく減る想定（67社→30社規模。案件の内容により変動）。</p>
+                <p style="font-size:11px; color:var(--ink-mid); margin-bottom:8px;">ティア区分は月次フィー基準（エンプラ＝月100万以上／ミドル＝月40万以上100万未満／リテール＝月40万未満）。表の売上は満額換算のたたき（エンプラ100万・ミドル50万・リテール10万/月）。商談中の案件は最大8社あり、現時点の見込みでエンプラ3社・ミドル3社が入る想定（入る月は調整できるため、目標到達から逆算して8〜10月に配置）。リテールは12月まで月6社ペースで縮小し、27年1月にAdDrive・LPツールへの移行で67社→30社規模へ半減、以降は月2〜3社ずつ緩やかに減る想定（案件の内容により変動）。エンプラ・ミドルは下期も獲得を続け、右肩上がりで増える想定。</p>
                 <div style="overflow-x:auto;">
                 <table style="font-size:10.5px; white-space:nowrap; margin:6px 0;">
                   <tbody>
                   <tr><th style="text-align:left;">項目</th><th>7月</th><th>8月</th><th>9月</th><th>10月</th><th>11月</th><th>12月</th><th style="background:var(--accent-light);">上期</th><th>1月</th><th>2月</th><th>3月</th><th>4月</th><th>5月</th><th>6月</th><th style="background:var(--accent-light);">下期</th><th style="background:var(--accent-light);">通期</th></tr>
-                  <tr><td>エンプラ社数</td><td>3</td><td>4</td><td>5</td><td>6</td><td>6</td><td>6</td><td style="background:var(--accent-light);">—</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td style="background:var(--accent-light);">—</td><td style="background:var(--accent-light);">6社</td></tr>
-                  <tr><td>エンプラ売上</td><td>300</td><td>400</td><td>500</td><td>600</td><td>600</td><td>600</td><td style="background:var(--accent-light);">3,000</td><td>600</td><td>600</td><td>600</td><td>600</td><td>600</td><td>600</td><td style="background:var(--accent-light);">3,600</td><td style="background:var(--accent-light);">6,600</td></tr>
-                  <tr><td>ミドル社数</td><td>6</td><td>7</td><td>8</td><td>9</td><td>9</td><td>10</td><td style="background:var(--accent-light);">—</td><td>10</td><td>11</td><td>11</td><td>12</td><td>12</td><td>12</td><td style="background:var(--accent-light);">—</td><td style="background:var(--accent-light);">12社</td></tr>
-                  <tr><td>ミドル売上</td><td>300</td><td>350</td><td>400</td><td>450</td><td>450</td><td>500</td><td style="background:var(--accent-light);">2,450</td><td>500</td><td>550</td><td>550</td><td>600</td><td>600</td><td>600</td><td style="background:var(--accent-light);">3,400</td><td style="background:var(--accent-light);">5,850</td></tr>
-                  <tr><td>リテール社数</td><td>79</td><td>79</td><td>79</td><td>79</td><td>73</td><td>67</td><td style="background:var(--accent-light);">—</td><td>30</td><td>30</td><td>30</td><td>30</td><td>30</td><td>30</td><td style="background:var(--accent-light);">—</td><td style="background:var(--accent-light);">30社</td></tr>
-                  <tr><td>リテール売上</td><td>790</td><td>790</td><td>790</td><td>790</td><td>730</td><td>670</td><td style="background:var(--accent-light);">4,560</td><td>300</td><td>300</td><td>300</td><td>300</td><td>300</td><td>300</td><td style="background:var(--accent-light);">1,800</td><td style="background:var(--accent-light);">6,360</td></tr>
-                  <tr class="total"><td>売上合計</td><td>1,390</td><td>1,540</td><td>1,690</td><td>1,840</td><td>1,780</td><td>1,770</td><td style="background:var(--accent-light);">10,010</td><td>1,400</td><td>1,450</td><td>1,450</td><td>1,500</td><td>1,500</td><td>1,500</td><td style="background:var(--accent-light);">8,800</td><td style="background:var(--accent-light);">18,810</td></tr>
+                  <tr><td>エンプラ社数</td><td>3</td><td>4</td><td>5</td><td>6</td><td>6</td><td>6</td><td style="background:var(--accent-light);">—</td><td>7</td><td>7</td><td>7</td><td>8</td><td>8</td><td>8</td><td style="background:var(--accent-light);">—</td><td style="background:var(--accent-light);">8社</td></tr>
+                  <tr><td>エンプラ売上</td><td>300</td><td>400</td><td>500</td><td>600</td><td>600</td><td>600</td><td style="background:var(--accent-light);">3,000</td><td>700</td><td>700</td><td>700</td><td>800</td><td>800</td><td>800</td><td style="background:var(--accent-light);">4,500</td><td style="background:var(--accent-light);">7,500</td></tr>
+                  <tr><td>ミドル社数</td><td>6</td><td>7</td><td>8</td><td>9</td><td>9</td><td>10</td><td style="background:var(--accent-light);">—</td><td>11</td><td>11</td><td>12</td><td>12</td><td>13</td><td>13</td><td style="background:var(--accent-light);">—</td><td style="background:var(--accent-light);">13社</td></tr>
+                  <tr><td>ミドル売上</td><td>300</td><td>350</td><td>400</td><td>450</td><td>450</td><td>500</td><td style="background:var(--accent-light);">2,450</td><td>550</td><td>550</td><td>600</td><td>600</td><td>650</td><td>650</td><td style="background:var(--accent-light);">3,600</td><td style="background:var(--accent-light);">6,050</td></tr>
+                  <tr><td>リテール社数</td><td>79</td><td>79</td><td>79</td><td>79</td><td>73</td><td>67</td><td style="background:var(--accent-light);">—</td><td>30</td><td>28</td><td>25</td><td>23</td><td>20</td><td>18</td><td style="background:var(--accent-light);">—</td><td style="background:var(--accent-light);">18社</td></tr>
+                  <tr><td>リテール売上</td><td>790</td><td>790</td><td>790</td><td>790</td><td>730</td><td>670</td><td style="background:var(--accent-light);">4,560</td><td>300</td><td>280</td><td>250</td><td>230</td><td>200</td><td>180</td><td style="background:var(--accent-light);">1,440</td><td style="background:var(--accent-light);">6,000</td></tr>
+                  <tr class="total"><td>売上合計</td><td>1,390</td><td>1,540</td><td>1,690</td><td>1,840</td><td>1,780</td><td>1,770</td><td style="background:var(--accent-light);">10,010</td><td>1,550</td><td>1,530</td><td>1,550</td><td>1,630</td><td>1,650</td><td>1,630</td><td style="background:var(--accent-light);">9,540</td><td style="background:var(--accent-light);">19,550</td></tr>
                   </tbody>
                 </table>
                 </div>
                 <ul style="font-size:11px; color:var(--ink-light); padding-left:16px; margin-top:6px; display:flex; flex-direction:column; gap:3px; list-style:disc;">
                   <li>全体の売上目標は広告運用1.8億＋AdDrive2,000万＝2億（LPツール売上は目標に含めない）。</li>
-                  <li>通期18,810万＝広告運用の目標18,000万に対し＋810万の上振れ余地。商談の入り方が変わる場合は、入る月の調整（目標到達からの逆算）で吸収する。</li>
+                  <li>通期19,550万＝広告運用の目標18,000万に対し＋1,550万の上振れ余地。商談の入り方が変わる場合は、入る月の調整（目標到達からの逆算）で吸収する。</li>
                   <li>留意点：自動化より先にエンプラが増えるため、エンプラの実運用を担う業務委託は8月から前倒しで確保する。業務委託は社内調整で柔軟に増やせるため、必要に応じて積極的に投入する。</li>
                   <li>既存クライアントがAdDrive契約へ切り替わる際の運用フィー減少は、リテールの絞り込み（79→30社）の中で吸収する前提（確認中）。</li>
                   <li>単位：万円。売上は獲得月から満額で計上する想定（月初契約ベース）。</li>
@@ -1046,7 +1046,7 @@
     </details>
   </details><div class="doc-footer">
     <span>広告TM 5期戦略ドラフト ／ SHO-SAN マーケティングDiv</span>
-    <span>2026年7月 ／ Ver.3.7</span>
+    <span>2026年7月 ／ Ver.3.8</span>
   </div></div>
       
   
