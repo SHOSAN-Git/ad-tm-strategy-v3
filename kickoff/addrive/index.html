@@ -11,21 +11,25 @@
 body{font-family:'Yu Mincho','YuMincho','Hiragino Mincho ProN',serif;background:var(--bg);color:var(--ink);line-height:1.9;font-size:15px;}
 .wrap{max-width:860px;margin:0 auto;padding:0 24px 96px;}
 .cap{font-family:'Helvetica Neue',Arial,sans-serif;font-size:11px;letter-spacing:.22em;color:var(--accent);text-transform:uppercase;font-weight:600;}
-header{padding:72px 0 48px;border-bottom:2px solid var(--ink);}
+header{padding:72px 0 40px;border-bottom:2px solid var(--ink);}
 h1{font-size:38px;font-weight:700;letter-spacing:.04em;margin:14px 0 10px;}
 .lead{color:var(--mid);font-size:15px;}
 .meta{display:flex;flex-wrap:wrap;gap:18px;margin-top:26px;font-size:13px;color:var(--mid);}
 .meta b{color:var(--ink);}
 .badge{display:inline-block;background:var(--accent);color:#fff;font-size:11px;padding:2px 10px;border-radius:3px;font-family:sans-serif;letter-spacing:.1em;margin-right:6px;}
-section{margin-top:64px;}
-h2{font-size:22px;font-weight:700;letter-spacing:.06em;margin:10px 0 22px;display:flex;align-items:baseline;gap:12px;}
+section{margin-top:60px;}
+h2{font-size:22px;font-weight:700;letter-spacing:.06em;margin:10px 0 22px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;}
 h2 .no{font-family:'Helvetica Neue',Arial,sans-serif;color:var(--accent);font-size:15px;letter-spacing:.15em;}
+.ag{font-family:sans-serif;font-size:10px;letter-spacing:.1em;color:#fff;background:var(--gold);border-radius:3px;padding:3px 9px;font-weight:600;white-space:nowrap;}
 .card{background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:24px 26px;margin-bottom:14px;}
 .flow{display:flex;flex-wrap:wrap;gap:0;align-items:stretch;margin:18px 0;}
-.flow .step{flex:1;min-width:200px;background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:16px 18px;}
+.flow .step{flex:1;min-width:180px;background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:16px 18px;}
 .flow .arr{display:flex;align-items:center;padding:0 10px;color:var(--accent);font-size:20px;}
 .step .t{font-size:12px;color:var(--accent);font-family:sans-serif;letter-spacing:.12em;margin-bottom:6px;}
 .step .b{font-size:14px;line-height:1.7;}
+.agendabar{margin-top:34px;}
+.agendabar .step{min-width:150px;padding:12px 14px;}
+.agendabar .step .b{font-size:12.5px;}
 .kpi{display:flex;flex-wrap:wrap;gap:14px;margin:16px 0;}
 .kpi .k{flex:1;min-width:180px;background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:18px 20px;text-align:center;}
 .kpi .v{font-size:26px;font-weight:700;color:var(--accent);}
@@ -47,6 +51,10 @@ ul{padding-left:1.3em;}li{margin-bottom:6px;}
 .rate .rn{width:120px;color:var(--mid);}
 .rate .rb{height:16px;background:var(--accent);border-radius:3px;}
 .rate .rv{font-family:sans-serif;font-weight:700;color:var(--accent);}
+.st{display:inline-block;font-family:sans-serif;font-size:10.5px;border-radius:3px;padding:2px 8px;margin-right:6px;font-weight:700;}
+.st.done{background:#e7efe3;color:#4a6b3f;}
+.st.now{background:var(--accent);color:#fff;}
+.st.todo2{background:#eee7db;color:var(--mid);}
 footer{margin-top:80px;padding-top:20px;border-top:1px solid var(--rule);font-size:12px;color:var(--light);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
 @media(max-width:640px){h1{font-size:28px;}.flow{flex-direction:column;}.flow .arr{transform:rotate(90deg);justify-content:center;padding:4px 0;}}
 </style>
@@ -63,10 +71,23 @@ footer{margin-top:80px;padding-top:20px;border-top:1px solid var(--rule);font-si
 <div><span class="badge" style="background:var(--mid);">外販</span><b>松本・丹野・前田</b></div>
 <div><span class="badge" style="background:var(--mid);">内部効率化</span><b>畠山・前田・深谷</b></div>
 </div>
+<div class="agendabar">
+<div class="blabel" style="margin-bottom:4px;">本日の進め方：</div>
+<div class="flow" style="margin:6px 0 10px;">
+<div class="step"><div class="t">①</div><div class="b">ゴール擦り合わせ<br><span style="color:var(--light);font-size:11px;">マネージャーから</span></div></div>
+<div class="arr">→</div>
+<div class="step"><div class="t">②</div><div class="b">現状共有<br><span style="color:var(--light);font-size:11px;">マネージャーから</span></div></div>
+<div class="arr">→</div>
+<div class="step"><div class="t">③</div><div class="b">課題・打ち手<br><span style="color:var(--light);font-size:11px;">みんなでブレスト</span></div></div>
+<div class="arr">→</div>
+<div class="step"><div class="t">④</div><div class="b">ネクストアクション<br><span style="color:var(--light);font-size:11px;">決める</span></div></div>
+</div>
+<div class="note">キックオフ後：7月中にPJ戦略を決定し、8月から動ける状態に。PJ戦略はPJリーダー中心に、三輪・和田と壁打ちして決定。</div>
+</div>
 </header>
 
 <section>
-<h2><span class="no">01</span>なぜ、このPJをやるのか</h2>
+<h2><span class="no">01</span>なぜ、このPJをやるのか<span class="ag">①ゴール擦り合わせ</span></h2>
 <p style="margin-bottom:14px;">「運用代行の一本足」と「効率化止まりのAI活用」——2つの課題を、<b>外販と内部効率化の両輪</b>で一気に解くPJ。</p>
 <div class="flow">
 <div class="step"><div class="t">BEFORE</div><div class="b">顧客は月の1/4がレポート・報告業務に消える。運用代行一本足はAI代替リスクが高く、利益率の上限も近い</div></div>
@@ -91,7 +112,7 @@ footer{margin-top:80px;padding-top:20px;border-top:1px solid var(--rule);font-si
 </section>
 
 <section>
-<h2><span class="no">02</span>定量目標（ミッション）</h2>
+<h2><span class="no">02</span>定量目標（ミッション）<span class="ag">①ゴール擦り合わせ</span></h2>
 <div class="kpi">
 <div class="k"><div class="v">40社</div><div class="l">Ad Drive契約累計社数<br>（26年12月末）</div></div>
 <div class="k"><div class="v">3.0</div><div class="l">労働生産性（売上÷人件費）<br>26年12月／基準：6月実績1.5</div></div>
@@ -106,7 +127,7 @@ footer{margin-top:80px;padding-top:20px;border-top:1px solid var(--rule);font-si
 </section>
 
 <section>
-<h2><span class="no">03</span>目指す姿とスケジュール</h2>
+<h2><span class="no">03</span>目指す姿とスケジュール<span class="ag">①ゴール擦り合わせ</span></h2>
 <div class="card">
 <p><b>◉ゴール</b>：Ad Driveを社外に広げてSaaS収益の柱を立ち上げるとともに、社内の運用自動化を推進し、「自社で成果が出ているツール」として売れる状態を作る。広告運用の自動化により「人を増やさなくても売上が伸びる」収益構造を作る。</p>
 <p style="margin-top:12px;"><b>◉プロセス例</b>（方向性。具体はこのPJで決める）</p>
@@ -126,7 +147,20 @@ footer{margin-top:80px;padding-top:20px;border-top:1px solid var(--rule);font-si
 </section>
 
 <section>
-<h2><span class="no">04</span>キックオフで話すこと — 課題ブレスト</h2>
+<h2><span class="no">04</span>現状共有<span class="ag">②現状共有</span></h2>
+<table>
+<tr><th style="width:200px;">項目</th><th>現在地</th></tr>
+<tr><td>労働生産性</td><td><span class="st done">計測済み</span>26年6月実績 1.5（売上1,413万÷総人件費945万）。目標3.0はここからの実削減が勝負</td></tr>
+<tr><td>Ad Drive本体</td><td><span class="st done">稼働中</span>社内リテール運用で利用中。改修要望の吸い上げルートは整備中</td></tr>
+<tr><td>自動化４工程（ディレ分析・入稿・週次チェック・翌月提案）</td><td><span class="st now">設計〜実装フェーズ</span>開発チームと連携して順次実運用へ。実装順の確定が直近の論点</td></tr>
+<tr><td>外販</td><td><span class="st now">8月販売開始予定</span>提案材料（型・デモ・料金）は整備中。契約はこれから→0→40社へ</td></tr>
+<tr><td>CS体制</td><td><span class="st todo2">未構築</span>AIチャットボット（社内データ学習）構想あり、要件はこれから</td></tr>
+<tr><td style="color:var(--light);">（当日追加共有）</td><td></td></tr>
+</table>
+</section>
+
+<section>
+<h2><span class="no">05</span>課題・打ち手（みんなでブレスト）<span class="ag">③課題・打ち手</span></h2>
 <div class="q"><div class="qh">Q1. 生産性3.0への逆算——どの業務を「なくす」か？</div><div class="qs">売上計画どおりでも人件費横ばいなら1.66にしかならない。残りは実削減。ディレ分析・入稿・週次チェック・翌月提案の実装順と、どのセグメント（リテール→ミドル）から適用するか。</div></div>
 <div class="q"><div class="qh">Q2. 40社の獲得チャネルは？</div><div class="qs">フロント経由／既存クライアント直接提案／新規商談同席——チャネル別の目標内訳と、月次の傾斜（8月販売開始→10月既存提案→12月末40社）をどう引くか。</div></div>
 <div class="q"><div class="qh">Q3. 内部効率化と外販の連携設計は？</div><div class="qs">自社実証（削減工数・成果データ）を営業材料に還元するルーティンを最初から組むか。改修要望の集約窓口と開発との定例。</div></div>
@@ -136,11 +170,12 @@ footer{margin-top:80px;padding-top:20px;border-top:1px solid var(--rule);font-si
 </section>
 
 <section>
-<h2><span class="no">05</span>今後のToDo（キックオフで記入）</h2>
+<h2><span class="no">06</span>ネクストアクション<span class="ag">④ネクストアクション</span></h2>
+<p style="margin-bottom:12px;">ゴール：<b>7月中にPJ戦略を決定し、8月から動ける状態にする</b>（PJ戦略はPJL中心に、三輪・和田と壁打ちして決定）。</p>
 <table class="todo">
 <tr><th style="width:50%;">やること</th><th style="width:20%;">担当</th><th style="width:30%;">期限</th></tr>
+<tr><td style="color:var(--light);">（例）PJ戦略の壁打ち設定（PJL×三輪・和田）</td><td style="color:var(--light);">松本</td><td style="color:var(--light);">今週中</td></tr>
 <tr><td style="color:var(--light);">（例）自動化対象業務の棚卸しと実装順の確定</td><td style="color:var(--light);">畠山・深谷</td><td style="color:var(--light);">7月末</td></tr>
-<tr><td></td><td></td><td></td></tr>
 <tr><td></td><td></td><td></td></tr>
 <tr><td></td><td></td><td></td></tr>
 <tr><td></td><td></td><td></td></tr>
