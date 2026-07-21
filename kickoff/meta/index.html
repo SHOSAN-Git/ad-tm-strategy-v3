@@ -11,21 +11,25 @@
 body{font-family:'Yu Mincho','YuMincho','Hiragino Mincho ProN',serif;background:var(--bg);color:var(--ink);line-height:1.9;font-size:15px;}
 .wrap{max-width:860px;margin:0 auto;padding:0 24px 96px;}
 .cap{font-family:'Helvetica Neue',Arial,sans-serif;font-size:11px;letter-spacing:.22em;color:var(--accent);text-transform:uppercase;font-weight:600;}
-header{padding:72px 0 48px;border-bottom:2px solid var(--ink);}
+header{padding:72px 0 40px;border-bottom:2px solid var(--ink);}
 h1{font-size:38px;font-weight:700;letter-spacing:.04em;margin:14px 0 10px;}
 .lead{color:var(--mid);font-size:15px;}
 .meta{display:flex;flex-wrap:wrap;gap:18px;margin-top:26px;font-size:13px;color:var(--mid);}
 .meta b{color:var(--ink);}
 .badge{display:inline-block;background:var(--accent);color:#fff;font-size:11px;padding:2px 10px;border-radius:3px;font-family:sans-serif;letter-spacing:.1em;margin-right:6px;}
-section{margin-top:64px;}
-h2{font-size:22px;font-weight:700;letter-spacing:.06em;margin:10px 0 22px;display:flex;align-items:baseline;gap:12px;}
+section{margin-top:60px;}
+h2{font-size:22px;font-weight:700;letter-spacing:.06em;margin:10px 0 22px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;}
 h2 .no{font-family:'Helvetica Neue',Arial,sans-serif;color:var(--accent);font-size:15px;letter-spacing:.15em;}
+.ag{font-family:sans-serif;font-size:10px;letter-spacing:.1em;color:#fff;background:var(--gold);border-radius:3px;padding:3px 9px;font-weight:600;white-space:nowrap;}
 .card{background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:24px 26px;margin-bottom:14px;}
 .flow{display:flex;flex-wrap:wrap;gap:0;align-items:stretch;margin:18px 0;}
-.flow .step{flex:1;min-width:200px;background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:16px 18px;}
+.flow .step{flex:1;min-width:180px;background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:16px 18px;}
 .flow .arr{display:flex;align-items:center;padding:0 10px;color:var(--accent);font-size:20px;}
 .step .t{font-size:12px;color:var(--accent);font-family:sans-serif;letter-spacing:.12em;margin-bottom:6px;}
 .step .b{font-size:14px;line-height:1.7;}
+.agendabar{margin-top:34px;}
+.agendabar .step{min-width:150px;padding:12px 14px;}
+.agendabar .step .b{font-size:12.5px;}
 .kpi{display:flex;flex-wrap:wrap;gap:14px;margin:16px 0;}
 .kpi .k{flex:1;min-width:180px;background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:18px 20px;text-align:center;}
 .kpi .v{font-size:26px;font-weight:700;color:var(--accent);}
@@ -45,6 +49,11 @@ ul{padding-left:1.3em;}li{margin-bottom:6px;}
 .acct{display:inline-block;border:1.5px solid var(--mid);border-radius:6px;padding:4px 10px;font-size:11.5px;font-family:sans-serif;margin:3px 4px 3px 0;background:#fff;}
 .acct.on{border-color:var(--accent);color:var(--accent);font-weight:700;}
 .chip{display:inline-block;background:#f3ede2;border-radius:20px;padding:3px 12px;font-size:12px;margin:4px 4px 0 0;color:var(--gold);font-weight:700;}
+.st{display:inline-block;font-family:sans-serif;font-size:10.5px;border-radius:3px;padding:2px 8px;margin-right:6px;font-weight:700;}
+.st.done{background:#e7efe3;color:#4a6b3f;}
+.st.now{background:var(--accent);color:#fff;}
+.st.todo2{background:#eee7db;color:var(--mid);}
+.blabel{font-size:12px;color:var(--mid);margin:10px 0 2px;}
 footer{margin-top:80px;padding-top:20px;border-top:1px solid var(--rule);font-size:12px;color:var(--light);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
 @media(max-width:640px){h1{font-size:28px;}.flow{flex-direction:column;}.flow .arr{transform:rotate(90deg);justify-content:center;padding:4px 0;}}
 </style>
@@ -60,10 +69,23 @@ footer{margin-top:80px;padding-top:20px;border-top:1px solid var(--rule);font-si
 <div><span class="badge">PJL</span><b>稲場</b></div>
 <div><span class="badge" style="background:var(--mid);">メンバー</span><b>和田</b></div>
 </div>
+<div class="agendabar">
+<div class="blabel" style="margin-bottom:4px;">本日の進め方：</div>
+<div class="flow" style="margin:6px 0 10px;">
+<div class="step"><div class="t">①</div><div class="b">ゴール擦り合わせ<br><span style="color:var(--light);font-size:11px;">マネージャーから</span></div></div>
+<div class="arr">→</div>
+<div class="step"><div class="t">②</div><div class="b">現状共有<br><span style="color:var(--light);font-size:11px;">マネージャーから</span></div></div>
+<div class="arr">→</div>
+<div class="step"><div class="t">③</div><div class="b">課題・打ち手<br><span style="color:var(--light);font-size:11px;">みんなでブレスト</span></div></div>
+<div class="arr">→</div>
+<div class="step"><div class="t">④</div><div class="b">ネクストアクション<br><span style="color:var(--light);font-size:11px;">決める</span></div></div>
+</div>
+<div class="note">キックオフ後：7月中にPJ戦略を決定し、8月から動ける状態に。PJ戦略はPJリーダー中心に、三輪・和田と壁打ちして決定。</div>
+</div>
 </header>
 
 <section>
-<h2><span class="no">01</span>なぜ、このPJをやるのか</h2>
+<h2><span class="no">01</span>なぜ、このPJをやるのか<span class="ag">①ゴール擦り合わせ</span></h2>
 <p style="margin-bottom:14px;">エンプラ拡大の前提は配信基盤。相乗り構造から<b>クライアント別専用アカウント</b>へ移行し、Metaの機械学習を最適化する——<b>上期KPI 6つのうちの1つ</b>。</p>
 <div class="flow">
 <div class="step"><div class="t">BEFORE — 相乗りアカウント</div><div class="b"><span class="acct">1アカウント： A社＋B社＋C社…</span><br>学習データが混ざり最適化が効きにくい。停止リスクも共倒れ</div></div>
@@ -80,7 +102,7 @@ footer{margin-top:80px;padding-top:20px;border-top:1px solid var(--rule);font-si
 </section>
 
 <section>
-<h2><span class="no">02</span>定量目標（ミッション）</h2>
+<h2><span class="no">02</span>定量目標（ミッション）<span class="ag">①ゴール擦り合わせ</span></h2>
 <div class="kpi">
 <div class="k"><div class="v">100%</div><div class="l">クライアント別専用アカウントでの<br>配信準備完了率（12月末）</div></div>
 <div class="k"><div class="v">100%</div><div class="l">加点：全キャンペーンでの<br>配信スタート</div></div>
@@ -94,7 +116,7 @@ footer{margin-top:80px;padding-top:20px;border-top:1px solid var(--rule);font-si
 </section>
 
 <section>
-<h2><span class="no">03</span>目指す姿（定性ゴール）</h2>
+<h2><span class="no">03</span>目指す姿（定性ゴール）<span class="ag">①ゴール擦り合わせ</span></h2>
 <div class="card">
 <p><b>◉ゴール</b>：Meta広告の全クライアントをクライアント別専用アカウント構造へ移行し、学習効率・配信品質・アカウント停止リスクに強い配信基盤を作る。</p>
 <p style="margin-top:12px;"><b>◉プロセス例</b>（方向性。具体はこのPJで決める）</p>
@@ -106,7 +128,19 @@ footer{margin-top:80px;padding-top:20px;border-top:1px solid var(--rule);font-si
 </section>
 
 <section>
-<h2><span class="no">04</span>キックオフで話すこと — 課題ブレスト</h2>
+<h2><span class="no">04</span>現状共有<span class="ag">②現状共有</span></h2>
+<table>
+<tr><th style="width:200px;">項目</th><th>現在地</th></tr>
+<tr><td>アカウント構造</td><td><span class="st now">相乗りが主流</span>クライアント別専用への移行がこのPJのミッション</td></tr>
+<tr><td>対象の棚卸し（分母）</td><td><span class="st now">これから</span>移行済み／進行中／未着手の全量把握。7月中の分母確定が完了率判定の前提</td></tr>
+<tr><td>移行手順テンプレ</td><td><span class="st todo2">未整備</span>開設・ピクセル/CAPI・クリエイティブ移管・権限のチェックリスト化から</td></tr>
+<tr><td>新規クライアントの開設ルール</td><td><span class="st todo2">未定</span>標準化後は「最初から新構造で開設」に統一できる</td></tr>
+<tr><td style="color:var(--light);">（当日追加共有：移行済み社数など）</td><td></td></tr>
+</table>
+</section>
+
+<section>
+<h2><span class="no">05</span>課題・打ち手（みんなでブレスト）<span class="ag">③課題・打ち手</span></h2>
 <div class="q"><div class="qh">Q1. 対象アカウントの棚卸しと分母確定はいつまでにやるか？</div><div class="qs">全クライアントの現状リスト（移行済み／未着手／進行中）。7月中の分母確定が完了率判定の前提。</div></div>
 <div class="q"><div class="qh">Q2. 移行手順の標準化——何をテンプレ化するか？</div><div class="qs">アカウント開設・ピクセル／CAPI・クリエイティブ移管・権限のチェックリスト。誰でも同じ品質で移行できる状態の定義。</div></div>
 <div class="q"><div class="qh">Q3. クライアント承認の取り方は？</div><div class="qs">移行のメリット説明資料（学習効率・リスク耐性）、フロントとの役割分担、切り替えタイミングの合意形成。</div></div>
@@ -116,11 +150,12 @@ footer{margin-top:80px;padding-top:20px;border-top:1px solid var(--rule);font-si
 </section>
 
 <section>
-<h2><span class="no">05</span>今後のToDo（キックオフで記入）</h2>
+<h2><span class="no">06</span>ネクストアクション<span class="ag">④ネクストアクション</span></h2>
+<p style="margin-bottom:12px;">ゴール：<b>7月中にPJ戦略を決定し、8月から動ける状態にする</b>（PJ戦略はPJL中心に、三輪・和田と壁打ちして決定）。</p>
 <table class="todo">
 <tr><th style="width:50%;">やること</th><th style="width:20%;">担当</th><th style="width:30%;">期限</th></tr>
+<tr><td style="color:var(--light);">（例）PJ戦略の壁打ち設定（PJL×三輪・和田）</td><td style="color:var(--light);">稲場</td><td style="color:var(--light);">今週中</td></tr>
 <tr><td style="color:var(--light);">（例）対象アカウントの棚卸しと移行カレンダー作成</td><td style="color:var(--light);">稲場</td><td style="color:var(--light);">7月末</td></tr>
-<tr><td></td><td></td><td></td></tr>
 <tr><td></td><td></td><td></td></tr>
 <tr><td></td><td></td><td></td></tr>
 <tr><td></td><td></td><td></td></tr>
