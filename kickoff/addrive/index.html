@@ -30,6 +30,10 @@ h2 .no{font-family:'Helvetica Neue',Arial,sans-serif;color:var(--accent);font-si
 .agendabar{margin-top:34px;}
 .agendabar .step{min-width:150px;padding:12px 14px;}
 .agendabar .step .b{font-size:12.5px;}
+.mini .step{min-width:96px;text-align:center;padding:12px 8px;}
+.mini .arr{padding:0 6px;}
+.mini .step .b{font-size:12px;}
+.mini .step .n{font-size:22px;font-weight:700;color:var(--accent);font-family:sans-serif;}
 .kpi{display:flex;flex-wrap:wrap;gap:14px;margin:16px 0;}
 .kpi .k{flex:1;min-width:180px;background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:18px 20px;text-align:center;}
 .kpi .v{font-size:26px;font-weight:700;color:var(--accent);}
@@ -90,7 +94,7 @@ footer{margin-top:80px;padding-top:20px;border-top:1px solid var(--rule);font-si
 <h2><span class="no">01</span>なぜ、このPJをやるのか<span class="ag">①ゴール擦り合わせ</span></h2>
 <p style="margin-bottom:14px;">「運用代行の一本足」と「効率化止まりのAI活用」——2つの課題を、<b>外販と内部効率化の両輪</b>で一気に解くPJ。</p>
 <div class="flow">
-<div class="step"><div class="t">BEFORE</div><div class="b">顧客は月の1/4がレポート・報告業務に消える。運用代行一本足はAI代替リスクが高く、利益率の上限も近い</div></div>
+<div class="step"><div class="t">BEFORE</div><div class="b">運用代行一本足はAI代替リスクが高く、利益率の上限も近い</div></div>
 <div class="arr">→</div>
 <div class="step" style="border-color:var(--accent);"><div class="t">AFTER</div><div class="b">リアルタイムに結果を共有しながらPDCAを回す。現顧客100社×月3万円＝年3,600万円の高利益SaaSに育つポテンシャル</div></div>
 </div>
@@ -129,7 +133,7 @@ footer{margin-top:80px;padding-top:20px;border-top:1px solid var(--rule);font-si
 <section>
 <h2><span class="no">03</span>目指す姿とスケジュール<span class="ag">①ゴール擦り合わせ</span></h2>
 <div class="card">
-<p><b>◉ゴール</b>：Ad Driveを社外に広げてSaaS収益の柱を立ち上げるとともに、社内の運用自動化を推進し、「自社で成果が出ているツール」として売れる状態を作る。広告運用の自動化により「人を増やさなくても売上が伸びる」収益構造を作る。</p>
+<p><b>◉ゴール</b>：Ad Driveを社外に広げてSaaS収益の柱を立ち上げるとともに、社内の運用自動化を推進する。広告運用の自動化により「人を増やさなくても売上が伸びる」収益構造を作る。</p>
 <p style="margin-top:12px;"><b>◉プロセス例</b>（方向性。具体はこのPJで決める）</p>
 <ul style="margin-top:6px;">
 <li><b>外販</b>：提案材料（型／デモ／料金）の整備、フロントと連携した導入支援</li>
@@ -144,6 +148,19 @@ footer{margin-top:80px;padding-top:20px;border-top:1px solid var(--rule);font-si
 <div class="arr">→</div>
 <div class="step"><div class="t">12月末</div><div class="b">契約累計40社＋労働生産性3.0</div></div>
 </div>
+<div class="blabel" style="margin-top:18px;">契約累計社数の想定イメージ：</div>
+<div class="flow mini" style="margin-top:6px;">
+<div class="step"><div class="t">8月</div><div class="b"><span class="n">4</span>社</div></div>
+<div class="arr">→</div>
+<div class="step"><div class="t">9月</div><div class="b"><span class="n">6</span>社</div></div>
+<div class="arr">→</div>
+<div class="step" style="border-color:var(--accent);"><div class="t">10月</div><div class="b"><span class="n">45</span>社</div></div>
+<div class="arr">→</div>
+<div class="step"><div class="t">11月</div><div class="b"><span class="n">45</span>社</div></div>
+<div class="arr">→</div>
+<div class="step"><div class="t">12月</div><div class="b"><span class="n">46</span>社</div></div>
+</div>
+<div class="note">10月の既存顧客への提案開始で一気に立ち上げる想定。</div>
 </section>
 
 <section>
@@ -152,7 +169,6 @@ footer{margin-top:80px;padding-top:20px;border-top:1px solid var(--rule);font-si
 <tr><th style="width:200px;">項目</th><th>現在地</th></tr>
 <tr><td>労働生産性</td><td><span class="st done">計測済み</span>26年6月実績 1.5（売上1,413万÷総人件費945万）。目標3.0はここからの実削減が勝負</td></tr>
 <tr><td>Ad Drive本体</td><td><span class="st done">稼働中</span>社内リテール運用で利用中。改修要望の吸い上げルートは整備中</td></tr>
-<tr><td>自動化４工程（ディレ分析・入稿・週次チェック・翌月提案）</td><td><span class="st now">設計〜実装フェーズ</span>開発チームと連携して順次実運用へ。実装順の確定が直近の論点</td></tr>
 <tr><td>外販</td><td><span class="st now">8月販売開始予定</span>提案材料（型・デモ・料金）は整備中。契約はこれから→0→40社へ</td></tr>
 <tr><td>CS体制</td><td><span class="st todo2">未構築</span>AIチャットボット（社内データ学習）構想あり、要件はこれから</td></tr>
 <tr><td style="color:var(--light);">（当日追加共有）</td><td></td></tr>
@@ -162,10 +178,8 @@ footer{margin-top:80px;padding-top:20px;border-top:1px solid var(--rule);font-si
 <section>
 <h2><span class="no">05</span>課題・打ち手（みんなでブレスト）<span class="ag">③課題・打ち手</span></h2>
 <div class="q"><div class="qh">Q1. 生産性3.0への逆算——どの業務を「なくす」か？</div><div class="qs">売上計画どおりでも人件費横ばいなら1.66にしかならない。残りは実削減。ディレ分析・入稿・週次チェック・翌月提案の実装順と、どのセグメント（リテール→ミドル）から適用するか。</div></div>
-<div class="q"><div class="qh">Q2. 40社の獲得チャネルは？</div><div class="qs">フロント経由／既存クライアント直接提案／新規商談同席——チャネル別の目標内訳と、月次の傾斜（8月販売開始→10月既存提案→12月末40社）をどう引くか。</div></div>
-<div class="q"><div class="qh">Q3. 内部効率化と外販の連携設計は？</div><div class="qs">自社実証（削減工数・成果データ）を営業材料に還元するルーティンを最初から組むか。改修要望の集約窓口と開発との定例。</div></div>
-<div class="q"><div class="qh">Q4. CS体制——導入が増えたとき誰が支える？</div><div class="qs">AIチャットボット（社内データ学習）の要件と開発連携。導入初期の人的サポートの範囲。</div></div>
-<div class="q"><div class="qh">Q5. リテールの体制移行との接続は？</div><div class="qs">リテールの運用をAd Driveに集約するタイミングと、契約形態の切り替え。対象選定と顧客コミュニケーション。</div></div>
+<div class="q"><div class="qh">Q2. 内部効率化と外販の連携設計は？</div><div class="qs">自社実証（削減工数・成果データ）を営業材料に還元するルーティンを最初から組むか。改修要望の集約窓口と開発との定例。</div></div>
+<div class="q"><div class="qh">Q3. CS体制——導入が増えたとき誰が支える？</div><div class="qs">AIチャットボット（社内データ学習）の要件と開発連携。導入初期の人的サポートの範囲。</div></div>
 <div class="hint"><b>示唆（たたき）</b>：①目標は「効率化の積み上げ」では届かない水準。キックオフでは既存フローの改善案ではなく「なくせる業務の棚卸し」から始めるのが効く。②内部効率化の削減実績（時間・円換算）を毎月記録して外販のセールスストーリーに使うと両輪が回る。③目標の測定定義（PL同一定義）は確定済みなので、月次で追えるダッシュボード化を早期に。</div>
 </section>
 
